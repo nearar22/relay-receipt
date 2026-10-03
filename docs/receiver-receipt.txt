@@ -1,0 +1,8 @@
+RELAYRECEIPT DEMONSTRATION FIXTURE
+This page was created by the repository operator. It is not an independent logistics record.
+
+Intake receipt RR-7
+Asset ID: rotor-77
+Quantity counted at intake: 4 sealed units
+Condition at arrival: intact with security seal S-901
+The package entered the demonstration receiver checkpoint with no reported discrepancy.

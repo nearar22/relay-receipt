@@ -1,0 +1,8 @@
+RELAYRECEIPT DEMONSTRATION FIXTURE
+This page was created by the repository operator. It is not an independent logistics record.
+
+Dispatch receipt RR-7
+Asset ID: rotor-77
+Quantity received for transfer: 4 sealed units
+Condition at departure: intact with security seal S-901
+The package left the demonstration sender checkpoint for the named receiver.
