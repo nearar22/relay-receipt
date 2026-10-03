@@ -43,6 +43,16 @@ npm run verify
 
 The deployment scripts target GenLayer Studio Next, chain `61997`. Live addresses and transaction evidence are recorded in `deployment.json` after deployment.
 
+## Live deployment
+
+- Network: GenLayer Studio Next, chain `61997`
+- Contract: [`0xa9fCc0Fd92Cf74f675bCAc10539Bd65C8CaC3C02`](https://explorer-studio-dev.genlayer.com/address/0xa9fCc0Fd92Cf74f675bCAc10539Bd65C8CaC3C02)
+- Deployment transaction: [`0x9435fca6...8b6694bf`](https://explorer-studio-dev.genlayer.com/tx/0x9435fca62dffd2d2f3f6a0fc854255b0f5222eece2ea1ef8f495632f8b6694bf)
+- Public demo route: `relay-demo-musmsxw2`
+- Exact deployed source SHA-256: `d68c05a41455332607feed8ce8a228445296823310d72393b2a6b65a6f344593`
+
+The live demonstration uses two separate wallet addresses. The sender creates the route and proposes a handoff; the named receiver submits the second receipt. Validator consensus returns `MATCH`, the handoff becomes `ACCEPTED`, and the route advances to `DELIVERED`. Both source pages remain explicitly labeled operator-created fixtures.
+
 ## Repository map
 
 - `contracts/relay_receipt.py`: contract, evidence binding, consensus, and custody state machine
