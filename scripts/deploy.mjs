@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { createAccount, createClient } from "genlayer-js";
 import { studioDevnet } from "genlayer-js/chains";
 
-const raw=process.env.GENLAYER_PRIVATE_KEY?.trim();
+const raw=process.env.GENLAYER_PRIVATE_KEY?.trim().replace(/^['"]|['"]$/g,"");
 if(!raw)throw new Error("GENLAYER_PRIVATE_KEY is required");
 const keeper=setInterval(()=>{},60000),sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const key=raw.startsWith("0x")?raw:`0x${raw}`;

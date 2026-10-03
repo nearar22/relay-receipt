@@ -1,7 +1,7 @@
 import { createAccount, createClient, generatePrivateKey } from "genlayer-js";
 import { studioDevnet } from "genlayer-js/chains";
 
-const contract=process.env.CONTRACT_ADDRESS?.trim(),raw=process.env.GENLAYER_PRIVATE_KEY?.trim(),senderSource=process.env.SENDER_SOURCE?.trim(),receiverSource=process.env.RECEIVER_SOURCE?.trim();
+const contract=process.env.CONTRACT_ADDRESS?.trim(),raw=process.env.GENLAYER_PRIVATE_KEY?.trim().replace(/^['"]|['"]$/g,""),senderSource=process.env.SENDER_SOURCE?.trim(),receiverSource=process.env.RECEIVER_SOURCE?.trim();
 if(!contract||!raw||!senderSource||!receiverSource)throw new Error("CONTRACT_ADDRESS, GENLAYER_PRIVATE_KEY, SENDER_SOURCE, and RECEIVER_SOURCE are required");
 const keeper=setInterval(()=>{},60000),sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const key=raw.startsWith("0x")?raw:`0x${raw}`,receiverKey=generatePrivateKey();
